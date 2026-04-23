@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/cleversonNobrega/nodeJs_Lib/issues"
   },
-  "homepage": "https://github.com/cleversonNobrega/nodeJs_Lib#readme"
+  "homepage": "https://github.com/cleversonNobrega/nodeJs_Lib#readme",
+  "dependencies": {
+    "commander": "^14.0.3"
+  }
 }
