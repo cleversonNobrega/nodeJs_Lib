@@ -1,26 +1,15 @@
 const fs = require("fs");
-<<<<<<< HEAD
 const trataErros = require("./erros/funcoesErro");
 
 const caminhoArquivo = process.argv;
 const link = caminhoArquivo[2];
-=======
-const { text } = require("stream/consumers");
-const caminhoArquino = process.argv;
-const link = caminhoArquino[2];
->>>>>>> ce440032dec6e55da576ee2b96700799eba54772
 
 fs.readFile(link, "utf-8", (erro, texto) => {
   try {
     if (erro) throw erro;
     contaPalavras(texto);
   } catch (erro) {
-<<<<<<< HEAD
     trataErros(erro);
-=======
-    if (erro.code === "ENOENT") console.log("erro que esperava");
-    else console.log("outro erro");
->>>>>>> ce440032dec6e55da576ee2b96700799eba54772
   }
 });
 
@@ -34,11 +23,7 @@ function contaPalavras(texto) {
 }
 
 function extraiParagrafos(texto) {
-<<<<<<< HEAD
   return texto.toLowerCase().split("\n");
-=======
-  return (paragrafos = texto.toLowerCase().split("\n"));
->>>>>>> ce440032dec6e55da576ee2b96700799eba54772
 }
 
 function limpaPalavras(palavra) {
